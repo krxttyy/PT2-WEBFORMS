@@ -1,74 +1,67 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
+
 <html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-    span.Apple-tab-span {white-space:pre}
-  </style>
-</head>
+
+<style>
+
+h1{color: gray;}
+
+label{color: gray;}
+
+p {color:gray;}
+
+</style>
+
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;form action="confirmationpage.html"&gt;</p>
-<p class="p1">&lt;fieldset&gt;</p>
-<p class="p1">&lt;legend&gt;Personal Information&lt;/legend&gt;</p>
-<p class="p1">&lt;label for="fname"&gt;Full name:&lt;/label&gt;&lt;br&gt;</p>
-<p class="p1">&lt;input type="text" id="fname" name="fname" placeholder="Enter your full name"&gt;</p>
-<p class="p1">&lt;br&gt;</p>
-<p class="p1">&lt;br&gt;</p>
-<p class="p1">&lt;label for="email"&gt;Email Address:&lt;/label&gt;&lt;br&gt;</p>
-<p class="p1">&lt;input type="text" id="email" name="email" placeholder="example@gmail.com"&gt;&lt;br&gt;</p>
-<p class="p1">&lt;br&gt;</p>
-<p class="p1">&lt;label for="contact"&gt;Contact Number:&lt;/label&gt;&lt;br&gt;</p>
-<p class="p1">&lt;input type="number" id="contact" name="contact" placeholder="09XXXXXXXXX"&gt;&lt;br&gt;</p>
-<p class="p1">&lt;br&gt;</p>
-<p class="p1">&lt;label for="gender"&gt;Gender:&lt;/label&gt;&lt;br&gt;</p>
-<p class="p1">&lt;input type="radio" name="radio1"&gt;Male&lt;br&gt;</p>
-<p class="p1">&lt;input type="radio" name="radio2"&gt;Female&lt;br&gt;</p>
-<p class="p1">&lt;br&gt;</p>
-<p class="p1">&lt;label for="course"&gt;Course/Grade Level:&lt;/label&gt;&lt;br&gt;</p>
-<p class="p1">&lt;select&gt;</p>
-<p class="p1">&lt;option disabled selected&gt;-- Select your level --<span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span> <span class="Apple-converted-space">    </span>&lt;/option&gt;</p>
-<p class="p1">&lt;option value="option1"&gt;Option 1&lt;/option&gt;</p>
-<p class="p1">&lt;option value="option2"&gt;Option 2&lt;/option&gt;</p>
-<p class="p1">&lt;/select&gt;</p>
-<p class="p1">&lt;/fieldset&gt;</p>
-<p class="p1">&lt;br&gt;</p>
-<p class="p1">&lt;fieldset&gt;</p>
-<p class="p1">&lt;legend&gt;Membership Information&lt;/legend&gt;</p>
-<p class="p1">&lt;label for="interests"&gt;Interests:&lt;/label&gt;&lt;br&gt;</p>
-<p class="p1">&lt;input type="checkbox" name="checkbox1"&gt;Coding&lt;br&gt;</p>
-<p class="p1">&lt;input type="checkbox" name="checkbox2"&gt;Design&lt;br&gt;</p>
-<p class="p1">&lt;input type="checkbox" name="checkbox3"&gt;Robotics&lt;br&gt;</p>
-<p class="p1">&lt;br&gt;</p>
-<p class="p1">&lt;label for="member"&gt;Type of Member:&lt;/label&gt;&lt;br&gt;</p>
-<p class="p1">&lt;select&gt;</p>
-<p class="p1">&lt;option disabled selected&gt;New Member&lt;/option&gt;</p>
-<p class="p1">&lt;option value="option1"&gt;Option 1&lt;/option&gt;</p>
-<p class="p1">&lt;option value="option2"&gt;Option 2&lt;/option&gt;</p>
-<p class="p1">&lt;/select&gt;</p>
-<p class="p1">&lt;br&gt;</p>
-<p class="p1">&lt;br&gt;</p>
-<p class="p1">&lt;label for="comments"&gt;Comments or Suggestions:&lt;/label&gt;&lt;br&gt;</p>
-<p class="p1">&lt;textarea</p>
-<p class="p1">name=”feedback” placeholder="Write your message here..." rows="4" cols="30"&gt;&lt;/textarea&gt;</p>
-<p class="p1">&lt;/fieldset&gt;</p>
-<p class="p1">&lt;br&gt;</p>
-<p class="p1">&lt;input type="submit" value="Submit"&gt;</p>
-<p class="p1">&lt;input type="reset" value="Reset"&gt;</p>
-<p class="p1">&lt;/form&gt;<span class="Apple-converted-space"> </span></p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/html&gt;</p>
-</body>
-</html>
+
+<form action="confirmationpage.html">
+
+<h1>Survey Form</h1>
+
+<p>Please take a few moments to tell us about your experience.</p>
+
+<label for="name">Name:</label><br>
+
+<input type="text" id="name" required><br><br>
+
+<label for="satisfaction">Overall Satisfaction (1-5):</label>
+
+<br>
+
+<input type="radio" id="sat1" name="satisfaction" value="1"> 1
+
+<input type="radio" id="sat2" name="satisfaction" value="2"> 2
+
+<input type="radio" id="sat3" name="satisfaction" value="3"> 3
+
+<input type="radio" id="sat4" name="satisfaction" value="4"> 4
+
+<input type="radio" id="sat5" name="satisfaction" value="5">5
+
+<br>
+
+<br>
+
+<label for="recommend">How likely are you to recommend us?</label>
+
+<br>
+
+<input type="range" min="0" max="10" value="0"><br>
+
+<br>
+
+<label for="comments">Any additional comments?</label>
+
+<br>
+
+<textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+
+<br>
+
+<br>
+
+<input type="submit" value="Submit Survey">
+
+
+
+</form>
