@@ -2,66 +2,112 @@
 
 <html>
 
-<style>
-
-h1{color: gray;}
-
-label{color: gray;}
-
-p {color:gray;}
-
-</style>
-
 <body>
+
+
 
 <form action="confirmationpage.html">
 
-<h1>Survey Form</h1>
+<fieldset>
 
-<p>Please take a few moments to tell us about your experience.</p>
+<legend>Personal Information</legend>
 
-<label for="name">Name:</label><br>
+<label for="fname">Full name:</label><br>
 
-<input type="text" id="name" required><br><br>
-
-<label for="satisfaction">Overall Satisfaction (1-5):</label>
-
-<br>
-
-<input type="radio" id="sat1" name="satisfaction" value="1"> 1
-
-<input type="radio" id="sat2" name="satisfaction" value="2"> 2
-
-<input type="radio" id="sat3" name="satisfaction" value="3"> 3
-
-<input type="radio" id="sat4" name="satisfaction" value="4"> 4
-
-<input type="radio" id="sat5" name="satisfaction" value="5">5
+<input type="text" id="fname" name="fname" placeholder="Enter your full name">
 
 <br>
 
 <br>
 
-<label for="recommend">How likely are you to recommend us?</label>
+<label for="email">Email Address:</label><br>
+
+<input type="text" id="email" name="email" placeholder="example@gmail.com"><br>
 
 <br>
 
-<input type="range" min="0" max="10" value="0"><br>
+<label for="contact">Contact Number:</label><br>
+
+<input type="number" id="contact" name="contact" placeholder="09XXXXXXXXX"><br>
 
 <br>
 
-<label for="comments">Any additional comments?</label>
+<label for="gender">Gender:</label><br>
+
+<input type="radio" name="radio1">Male<br>
+
+<input type="radio" name="radio2">Female<br>
 
 <br>
 
-<textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+<label for="course">Course/Grade Level:</label><br>
+
+<select>
+
+<option disabled selected>-- Select your level --		     </option>
+
+<option value="option1">Option 1</option>
+
+<option value="option2">Option 2</option>
+
+</select>
+
+</fieldset>
+
+<br>
+
+<fieldset>
+
+<legend>Membership Information</legend>
+
+<label for="interests">Interests:</label><br>
+
+<input type="checkbox" name="checkbox1">Coding<br>
+
+<input type="checkbox" name="checkbox2">Design<br>
+
+<input type="checkbox" name="checkbox3">Robotics<br>
+
+<br>
+
+<label for="member">Type of Member:</label><br>
+
+<select>
+
+<option disabled selected>New Member</option>
+
+<option value="option1">Option 1</option>
+
+<option value="option2">Option 2</option>
+
+</select>
 
 <br>
 
 <br>
 
-<input type="submit" value="Submit Survey">
+<label for="comments">Comments or Suggestions:</label><br>
+
+<textarea
+
+name=”feedback” placeholder="Write your message here..." rows="4" cols="30"></textarea>
+
+</fieldset>
+
+<br>
+
+<input type="submit" value="Submit">
+
+<input type="reset" value="Reset">
+
+</form> 
 
 
 
-</form>
+
+
+</body>
+
+
+
+</html>
